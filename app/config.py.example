@@ -1,0 +1,11 @@
+from pydantic_settings import BaseSettings
+
+
+class Settings(BaseSettings):
+    DB_HOST: str = ""
+    DB_USERNAME: str = ""
+    DB_PASSWORD: str = ""
+    DB_NAME: str = "JLL2"
+    DEBUG: bool = False
+    notif_api : str = ""
+settings = Settings()

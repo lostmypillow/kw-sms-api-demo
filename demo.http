@@ -1,0 +1,23 @@
+### Case 1: Short Message Content to Mom
+GET http://localhost:8000/sms?student_id=123456&recipient=Mom&phone_number=0912345678&message_content=你好嗎
+Accept: text/html
+
+### Case 2: Short Message Content to Dad
+GET http://localhost:8000/sms?student_id=654321&recipient=Dad&phone_number=0912345678&message_content=你好嗎
+Accept: text/html
+
+### Case 3: Long Message Content to Mom
+GET http://localhost:8000/sms?student_id=112233&recipient=Mom&phone_number=0912345678&message_content=你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎
+Accept: text/html
+
+### Case 4: Long Message Content to Dad
+GET http://localhost:8000/sms?student_id=332211&recipient=Dad&phone_number=0912345678&message_content=你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎
+Accept: text/html
+
+### Case 5: Long Message Content with URL to Mom
+GET http://localhost:8000/sms?student_id=987654&recipient=Mom&phone_number=0912345678&message_content=你好嗎你好嗎你好嗎你好嗎你好嗎你好嗎，請看：http://example.com/school
+Accept: text/html
+
+### Case 7: Message with specified send_time
+GET http://localhost:8000/sms?student_id=789012&recipient=Mom&phone_number=0912345678&message_content=預約簡訊測試&send_time=2025-12-25T10:00:00
+Accept: text/html
