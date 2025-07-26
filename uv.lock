@@ -273,7 +273,7 @@ wheels = [
 ]
 
 [[package]]
-name = "kwsms"
+name = "kw-sms-demo"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
